@@ -1,0 +1,22 @@
+{
+  "development": {
+    "debug" : true,
+    "configPath" : "~/configs/",
+    "mongoUri" : "mongodb://localhost:27017/app",
+    "jwt": {
+      "signOptions": {
+        "expiresIn": "30 days"
+      }
+    }
+  },
+  "production": {
+    "debug" : false,
+    "mongoUri" : "mongodb://localhost:27017/app",
+    "configPath" : "/root/app-conf/",
+    "jwt": {
+      "signOptions": {
+        "expiresIn": "30 days"
+      }
+    }
+  }
+}
