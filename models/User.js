@@ -16,7 +16,9 @@ const UserSchema = new mongoose.Schema({
     bio: String,
     image: String,
     hash: String,
-    salt: String
+    salt: String,
+    resetPasswordToken: String,
+    resetPasswordExpiration: Date
 }, {timestamps: true});
 
 UserSchema.plugin(uniqueValidator, {message: 'Is already taken.'});
