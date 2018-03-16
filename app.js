@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const errorhandler = require('errorhandler');
-const config = require('./config/config').config;
+const config = require('./config/config');
 const session = require('express-session');
 const mongoose = require('mongoose');
 

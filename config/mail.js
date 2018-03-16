@@ -1,6 +1,6 @@
 const hbs = require('nodemailer-express-handlebars');
 const nodemailer = require('nodemailer');
-const config = require('./config').config;
+const config = require('./config');
 const path = require('path');
 
 const smtpTransport = nodemailer.createTransport(config.mailConfig);

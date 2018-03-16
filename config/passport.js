@@ -6,7 +6,7 @@ const User = mongoose.model('User');
 
 
 // load the auth variables
-const configAuth = require('./auth'); // use this one for testing
+const configAuth = require('./config');
 
 module.exports = function(passport) {
 

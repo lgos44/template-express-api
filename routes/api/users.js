@@ -5,7 +5,7 @@ const User = mongoose.model('User');
 const auth = require('../auth');
 const async = require('async');
 const mail = require('../../config/mail');
-const config = require('../../config/config').config;
+const config = require('../../config/config');
 const crypto = require('crypto');
 
 router.get('/user', auth.required, function(req, res, next){
